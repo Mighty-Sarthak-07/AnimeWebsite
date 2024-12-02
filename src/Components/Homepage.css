@@ -1,0 +1,276 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
+
+.homepage {
+    background: rgb(9, 9, 10);
+}
+
+header {
+    padding: 2rem 5rem;
+    width: 90%;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-family: inherit;
+    border: 1px solid #e5e7eb;
+}
+
+#search {
+    padding: 0.6rem 1.4rem;
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+button:hover {
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
+}
+
+form {
+    position: relative;
+    width: 100%;
+}
+
+.input-control {
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.input-control input {
+    width: 90%;
+    padding: 0.7rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    box-shadow: 5px solid #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.input-control button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer {
+    background-color: #121212;
+    color: #e5e7eb;
+    padding: 2rem 5rem;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    font-size: x-large;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.footer-section {
+    flex: 1;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+    animation: bounceIn 1s ease forwards;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+
+.footer-links a,
+.footer-contact a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #f97316;
+    transform: scale(1.05);
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    gap: 1.5rem;
+}
+.footer-social a {
+    color: #e5e7eb;
+    font-size: larger;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #f97316;
+    transform: rotate(10deg) scale(1.1);
+}
+
+.footer-end{
+    align-items: center;
+    text-align: center;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-logo {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 3rem;
+        width: 95%;
+    }
+
+    .logo {
+        margin-bottom: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #search {
+        padding: 0.8rem 1rem;
+    }
+
+    .input-control input {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .logo {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    #search {
+        padding: 0.7rem 0.8rem;
+    }
+
+    .input-control input {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
