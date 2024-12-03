@@ -72,6 +72,7 @@ function Homepage() {
         <div class="footer-section">
             <div class="footer-logo">ANIMEpedia</div>
             <p>"ANIMEpedia: Your Gateway to the World of Anime and Manga!"</p>
+            <p> Designed by Sarthak Kesarwani</p>
         </div>
         <div class="footer-section footer-links">
             <h3>Quick Links</h3>
@@ -82,7 +83,7 @@ function Homepage() {
         </div>
         <div class="footer-section footer-contact">
             <h3>Contact Us</h3>
-            <a href="mailto:info@example.com">info@example.com</a>
+            <a href="mailto:info@example.com">Sarthak@gmail.com</a>
             <a href="tel:+1234567890">+1 (234) 567-890</a>
         </div>
         <div class="footer-section footer-social">
@@ -90,8 +91,8 @@ function Homepage() {
             <div className="social-links">
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
+            <a href="https://www.instagram.com/savage_sarthak_07/profilecard/?igsh=MTBtbWlzd2Z1emU0cg%3D%3D" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sarthak-kesarwani-48b4702a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
         </div>
        
     </div>
